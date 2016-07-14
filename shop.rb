@@ -19,13 +19,14 @@ module Shop
 
     get "/" do
       products = FetchProducts.new.call
-      erb :"products/index", locals: { products: products, title: "Products" }
+    end
+
+    get "/warehouse" do
+      products = FetchWarehouseItems.new.call
     end
 
     get "/products/:id" do |id|
       product = FindProduct.new.call(id)
-      halt 404 unless product
-      erb :"products/show", locals: { product: product }
     end
 
   end
