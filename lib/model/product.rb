@@ -4,7 +4,7 @@ module Shop
 
     @@id = 0
 
-    def initialize(name:, price:)
+    def initialize(name, price)
       @id = next_id
       @name = name
       @price = price
