@@ -15,7 +15,8 @@ module Shop
       FindProduct.new.call(product_id)
       #przywołaj produkty znalezione poprzez service
       #FindProduct (po ID z tablicy PRODUCTS)
-
+    end
+    
     def total_price
       product = find_product
       product.price * quantity

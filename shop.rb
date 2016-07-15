@@ -21,7 +21,12 @@ module Shop
     end
 
     get "/" do
+      erb :"home"
+    end
+
+    get "/products" do
       products = FetchProducts.new.call
+      erb :"products/index", locals: { products: products, title: "Products" }
     end
 
     get "/products/:id" do |id|
@@ -44,6 +49,6 @@ module Shop
       rescue KeyError
         halt 422
       end
-    end    
+    end
   end
 end
