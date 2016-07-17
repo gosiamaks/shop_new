@@ -1,0 +1,96 @@
+body {
+      background-image: url("/pics/bgr.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: static;
+      font-family: "Aaargh Normal", sans-serif;
+
+
+}
+
+.center {
+        position: relative;
+        padding: 70px;
+        margin-top: 70px;
+        text-align: center;
+}
+
+.transbox {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+    font-family: "Courier New", serif;
+}
+
+h2 {
+    font-family: "Courier New", serif;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color:white;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.button-nav {
+  cursor: pointer;
+  background-color: #458C99;
+  color: #E8FFED;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-act {
+  cursor: pointer;
+  background-color: white;
+  color: #458C99;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-submit {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #458C99;
+  padding: 7px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-submit:hover {
+  background-color: black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
