@@ -1,4 +1,4 @@
-require_relative './FindWarehouseItem'
+require_relative './find_warehouse_item'
 
 module Shop
   class DeleteItemFromWarehouse

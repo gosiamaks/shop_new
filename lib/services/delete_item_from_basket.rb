@@ -1,4 +1,4 @@
-require_relative './FetchBasketItems'
+require_relative './fetch_basket_items'
 
 module Shop
   class DeleteItemFromBasket
