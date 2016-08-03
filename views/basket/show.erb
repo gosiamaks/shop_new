@@ -1,0 +1,33 @@
+<h2>My basket</h2>
+You have now in your basket:
+<div class="center">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% basket.each do |items| %>
+        <tr>
+          <td><%= items[:product].name %></td>
+          <td><%= items[:product].price %></td>
+          <td><%= items[:quantity] %></td>
+          <td><%= items[:total_price] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td> <b> Summary:</b> </td>
+        <td><%=sum_price%>$</td>
+    </tfoot>
+  </table>
+</div>
+<a class=button-nav href="/products">See more </a> |
+<a class=button-act href="/payment">Buy!</a>

@@ -1,5 +1,9 @@
-# frozen_string_literal: true
-# A sample Gemfile
 source "https://rubygems.org"
+# Web framework
+gem "sinatra"
 
-# gem "rails"
+group :test do
+  gem "rack-test"
+  gem "rspec"
+  gem 'simplecov', require: false
+end

@@ -1,0 +1,7 @@
+<h2><%= product.name %></h2>
+
+<form action="/basket" method="post">
+  <input type="hidden" name="product_id" value=<%= product.id %>>
+  <input type="number" name="quantity" value=1>
+  <button class="button-submit">Add to basket</button>
+</form>
